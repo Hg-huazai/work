@@ -1,0 +1,76 @@
+/* pages/home/index.wxss */
+.content {
+  padding: 10px;
+  /* width: 100%; */
+}
+.search {
+  background: #f8f8f8;
+  border-radius: 20px;
+  height: 85rpx;
+  line-height: 85rpx;
+  font-size: 14px;
+  padding-left: 5px;
+}
+.search .city {
+  display: inline-block;
+  border-right: 1px solid #aaaaaa;
+  /* padding-right: 10px; */
+  padding-left: 10px;
+  /* margin: 0 10px; */
+  width: 20%;
+  text-align: center;
+  box-sizing: border-box;
+}
+.search .search-item {
+  display: inline-block;
+  text-align: center;
+  width: 80%;
+}
+.work {
+  height: 240px;
+  /* background: pink; */
+   margin-top: 10px;
+}
+.work .work-left {
+  float: left;
+  width: 67%;
+  padding-right: 3%;
+  height: 100%;
+}
+.work .work-left image {
+  height: 220rpx;
+  width: 100%;
+}
+.work .work-left .work-l-t {
+  width: 100%;
+  padding-bottom: 10px;
+  height: 50%;
+  box-sizing: border-box;
+ 
+}
+.work .work-left .work-l-t image {
+  height: 100%;
+}
+.work .work-left .work-l-b {
+  height: 50%;
+}
+.work .work-left .work-l-b navigator {
+  display: inline-block;
+  width: 48.5%;
+  height: 100%;
+}
+.work .work-left .work-l-b navigator image {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+}
+.work .work-left .work-l-b navigator:first-child {
+  padding-right: 3%;
+}
+.work .work-right {
+  float: left;
+  width: 30%;
+}
+.work .work-right image {
+  width: 100%;
+}

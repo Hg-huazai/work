@@ -1,0 +1,21 @@
+<!--index.wxml-->
+<view class="content">
+  <view class="search">
+    <navigator class="city">阳江</navigator>
+    <navigator class="search-item">搜索岗位/公司</navigator>
+  </view>
+  <view class="work">
+    <view class="work-left">
+      <navigator class="work-l-t">
+        <image src="../../static/img/work/work-01_03.png"></image>
+      </navigator>
+      <view class="work-l-b">
+        <navigator><image src="../../static/img/work/work-01_08.png"></image></navigator>
+        <navigator><image src="../../static/img/work/work-01_10.png"></image></navigator>
+      </view>
+    </view>
+    <view class="work-right">
+      <navigator><image src="../../static/img/work/work-01_05.png"></image></navigator>
+    </view>
+  </view>
+</view>
