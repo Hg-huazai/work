@@ -16,20 +16,20 @@
     "list": [{
       "pagePath": "pages/home/index",
       "text": "找工作",
-      "iconPath": "static/img/tabbar/icon-1.png",
-      "selectedIconPath": "static/img/tabbar/icon-1-active.png"
+      "iconPath": "static/img/tabbar/icon_03.png",
+      "selectedIconPath": "static/img/tabbar/icon_03_active.png"
     },
     {
       "pagePath": "pages/news/index",
       "text": "消息",
-      "iconPath": "static/img/tabbar/icon-1.png",
-      "selectedIconPath": "static/img/tabbar/icon-1-active.png"
+      "iconPath": "static/img/tabbar/icon_05.png",
+      "selectedIconPath": "static/img/tabbar/icon_05_active.png"
     },
     {
       "pagePath": "pages/member/mine",
-      "text": "消息",
-      "iconPath": "static/img/tabbar/icon-1.png",
-      "selectedIconPath": "static/img/tabbar/icon-1-active.png"
+      "text": "我的",
+      "iconPath": "static/img/tabbar/icon_07.png",
+      "selectedIconPath": "static/img/tabbar/icon_07_active.png"
     }]
   },
   "style": "v2",

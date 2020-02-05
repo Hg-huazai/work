@@ -4,6 +4,7 @@
     <navigator class="city">阳江</navigator>
     <navigator class="search-item">搜索岗位/公司</navigator>
   </view>
+
   <view class="work">
     <view class="work-left">
       <navigator class="work-l-t">
@@ -16,6 +17,83 @@
     </view>
     <view class="work-right">
       <navigator><image src="../../static/img/work/work-01_05.png"></image></navigator>
+    </view>
+  </view>
+
+  <view class="recommend">
+    <view class="content1">
+      <view class="content1-left">为你推荐</view>
+      <view  class="content1-right">
+        <view class="saixuan">筛选</view>
+        <image src="../../static/img/work/saixuan_03.png"></image>
+      </view>
+    </view>
+    <view class="content2">
+      <view class="box"  wx:for="{{list}}">
+        <view class="content2-item">{{item.post}}</view>
+      </view>
+    </view>
+    <view class="content3">
+      <view class="content3-item">推荐排序</view>
+      <view class="content3-item">离我最近</view>
+      <view class="content3-item">工资最高</view>
+      <view class="content3-item">最新发布</view>
+        
+    </view>
+    <view class="content4">
+      <view class="content4-top">
+        <view class="left">
+          <image src="../../static/img/work/item_07.png"></image>
+        </view>
+        <view class="center">
+          <text class="text1">服务员\n</text>
+          <text class="text2">3200-3500元\n</text>
+          <text class="text3">免费培训 | 包吃</text>
+        </view>
+        <view class="right">
+          <view class="enroll">
+            报名
+          </view>
+        </view>
+        <view class="clear"></view>
+          
+
+      </view>
+      <view class="content4-bottom">
+        <view  class="left">
+          <text decode>梅姨海鲜大排档 &gt;</text>
+        </view>
+        <view class="right">
+          <text>阳西县 25km</text>
+        </view>
+      </view>
+        
+    </view>
+    <view class="content4">
+      <view class="content4-top">
+        <view class="left">
+          <image src="../../static/img/work/item_07.png"></image>
+        </view>
+        <view class="center">
+          <text class="text1">服务员\n</text>
+          <text class="text2">3200-3500元\n</text>
+          <text class="text3">免费培训 | 包吃</text>
+        </view>
+        <view class="right">
+          <view class="enroll">
+            报名
+          </view>
+        </view>
+      </view>
+      <view class="content4-bottom">
+        <view  class="left">
+          <text decode>梅姨海鲜大排档 &gt;</text>
+        </view>
+        <view class="right">
+          <text>阳西县 25km</text>
+        </view>
+      </view>
+        
     </view>
   </view>
 </view>

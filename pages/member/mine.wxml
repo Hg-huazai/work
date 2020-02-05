@@ -1,2 +1,115 @@
 <!--pages/member/mine.wxml-->
-<text>pages/member/mine.wxml</text>
+<view class="content">
+  <view class="content1">
+    <view class="img">
+      <image src="../../static/img/mine/mine_03.png" mode="aspectFit"></image>
+    </view>
+    <view class="info">
+      <view class="info1">
+        <text>真实姓名</text>
+        <image src="../../static/img/mine/mine_50.png" mode="aspectFit"></image>
+      </view>
+      <navigator class="info2">
+        <image src="../../static/img/mine/mine_51.png" mode="aspectFit"></image>
+        <text>编织简历</text>
+      </navigator>
+    </view>
+    <navigator class="info-item">
+      <text>设置</text>
+      <image src="../../static/img/mine/mine_06.png" mode="aspectFit"></image>
+    </navigator>
+    <view class="clear"></view>
+  </view>
+
+  <view class="content2">
+    <navigator class="content2-item"> 
+      <view class="img">
+        <image src="../../static/img/mine/mine_11.png" mode="aspectFit"></image>
+      </view>
+      <view class="text">我的简历</view>
+    </navigator>
+    <navigator class="content2-item"> 
+      <view class="img">
+        <image src="../../static/img/mine/mine_13.png" mode="aspectFit"></image>
+      </view>
+      <view class="text">邀请有奖</view>
+    </navigator>
+    <navigator class="content2-item"> 
+      <view class="img">
+        <image src="../../static/img/mine/mine_15.png" mode="aspectFit"></image>
+      </view>
+      <view class="text">岗位收藏</view>
+    </navigator>
+  </view>
+  <view class="content3">
+    <view class="top">
+      <text class="t-left">报名记录</text>
+      <navigator>
+        <text class="t-right" decode>查看全部记录 &gt;</text>
+      </navigator>
+    </view> 
+    <view class="bottom">
+      <navigator class="item">
+        <view class="img">
+          <image src="../../static/img/mine/mine_21.png"></image>
+        </view>
+        <view class="text">通过初筛</view>
+      </navigator>
+      <navigator class="item">
+        <view class="img">
+          <image src="../../static/img/mine/mine_24.png"></image>
+        </view>
+        <view class="text">通过初筛</view>
+      </navigator>
+      <navigator class="item">
+        <view class="img">
+          <image src="../../static/img/mine/mine_27.png"></image>
+        </view>
+        <view class="text">通过初筛</view>
+      </navigator>
+      <navigator class="item">
+        <view class="img">
+          <image src="../../static/img/mine/mine_30.png"></image>
+        </view>
+        <view class="text">通过初筛</view>
+      </navigator>
+    </view>
+  </view>
+  <view class="content4">
+    <view class="item">
+      <view class="img">
+        <image src="../../static/img/mine/mine_36.png"></image>
+      </view>
+        <navigator class="left">
+          <text>求职意向</text>
+          <text decode="true">&gt;</text>
+          <text>去开启 </text>
+        </navigator>
+    </view>
+    <view class="item">
+      <view class="img">
+        <image src="../../static/img/mine/mine_39.png"></image>
+      </view>
+        <navigator class="left">
+          <text>闪聘模式</text>
+          <text decode="true">&gt;</text>
+          <text>去开启 </text>
+        </navigator>
+    </view>
+      
+  </view>
+  <view class="content4">
+    <view class="item">
+      <view class="img">
+        <image src="../../static/img/mine/mine_41.png"></image>
+      </view>
+        <navigator class="left">
+          <text>联系客服</text>
+          <text decode="true">&gt;</text>
+          <text>400-20-9808 </text>
+        </navigator>
+    </view>
+    
+      
+  </view>
+</view>
