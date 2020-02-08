@@ -1,0 +1,152 @@
+/* pages/home/details.wxss */
+.clear {
+  clear: both;
+}
+.content2 {
+  padding: 10px 15px;
+  border-bottom: 10px solid #f1f1f1;
+}
+.content2 .name {
+  font-weight: bold;
+}
+.content2 .price {
+  color: #e06e25;
+  margin: 10px 0;
+  font-weight: bold;
+}
+.content2 .price text {
+  font-size: 12px;
+}
+.content2 .welfare {
+  padding-bottom: 15px;
+  border-bottom: 1px solid #dddddd;
+}
+.content2 .welfare-item {
+  display: inline-block;
+  background-color: #f5f5f5;
+  color: #666666;
+  margin-right: 10px;
+  padding: 3px 10px;
+  font-size: 12px;
+}
+.content2 .number {
+  color: #666666;
+  padding: 10px 0;
+  font-size: 14px;
+}
+.content2 .number .number-item1 {
+  float: left;
+}
+.content2 .number .number-item2 {
+  float: right;
+}
+
+/* 招聘要求 */
+.content4 {
+  padding: 10px 15px;
+  border-bottom: 10px solid #f1f1f1;
+}
+.content4 .condition {
+  font-weight: bold;
+}
+.content4 .condition-item {
+  font-size: 14px;
+  color: #686868;
+  padding: 10px 0 10px 0;
+}
+
+/* 工作地点 */
+.content5 {
+  padding: 10px 15px;
+  border-bottom: 10px solid #f1f1f1;
+}
+.content5 .address {
+
+}
+.content5 .address-left {
+  float: left;
+  font-weight: bold;
+}
+.content5 .address-right {
+  float: right;
+  font-size: 14px;
+  color: #999999;
+}
+.content5 .position {
+  width: 100%;
+  /* background-color: pink; */
+}
+.content5 .position image {
+  width: 100%;
+  height: 75px;
+  padding: 15px 0;
+}
+
+/* 公司信息 */
+.content6 {
+  padding: 10px 15px;
+  border-bottom: 10px solid #f1f1f1;
+}
+.content6 .info {
+  padding-bottom: 15px;
+}
+.content6 .info-left {
+  float: left;
+  font-weight: bold;
+}
+.content6 .info-right {
+  float: right;
+  font-size: 14px;
+  color: #999999;
+}
+.content6 .info-item .img {
+  display: inline-block;
+  vertical-align: middle;
+}
+.content6 .info-item .img image {
+  width: 50px;
+  height: 50px;
+}
+.content6 .info-item .company {
+  display: inline-block;
+  padding-left: 5px;
+  vertical-align: middle;
+}
+.content6 .info-item .company .name {
+  font-weight: bold;
+  padding-bottom: 8px;
+}
+.content6 .info-item .company .name text {
+  display: inline-block;
+  overflow:hidden; 
+  text-overflow:ellipsis; 
+  white-space:nowrap;
+}
+.content6 .info-item .company .company-item {
+  font-size: 12px;
+  color: #999999;
+
+}
+
+.content7 {
+  border-bottom: 10px solid #f1f1f1;
+}
+.content7 .describe {
+  padding: 0 15px 10px;
+  border-bottom: 1px solid #dddddd;
+}
+.content7 .describe-info {
+  padding: 10px 15px;
+}
+.content7 .describe-info .describe-item {
+}
+.content7 .describe-info .describe-item .title {
+  font-weight: bold;
+  line-height: 40px;
+}
+.content7 .describe-info .describe-item .text {
+  font-size: 12px;
+  color: #898989;
+  display: inline-block;
+  line-height: 20px;
+}

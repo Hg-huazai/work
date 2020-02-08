@@ -5,96 +5,89 @@ Page({
    * 页面的初始数据
    */
   data: {
-    list:[
+    currentIndexNav: 0,
+    currentIndexTab: 0,
+    status: 1,
+    showdow: false,
+    recommend: [
+      { post: "全部岗位", status: 1},
+      { post: "全部岗位", status: 2},
+      { post: "全部岗位", status: 3},
+      { post: "全部岗位", status: 4},
+      { post: "全部岗位", status: 5},
+      { post: "全部岗位", status: 6},
+      { post: "全部岗位", status: 7}
+    ],
+    tab: [
+      {sore: "推荐列表", status: 1},
+      {sore: "离我最近", status: 2},
+      {sore: "工资最高", status: 3},
+      {sore: "最新发布", status: 4},
+    ],
+    employeInfo: [
       {
-        post: "全部岗位",
-        code: [
-          {
-            sore:"排列推荐",
-            work:[
-              {
-                img: "../../img.png",
-                staff: "服务员",
-                wages: "3200-3500元/月",
-                discount: "免费培训|包吃",
-                name: "梅姨海鲜大排档",
-                distance: "阳西县 25km"
-              }
-            ]
-          },
-          {
-            sore: "离我最近",
-            work: [
-              {
-                img: "../../img.png",
-                staff: "服务员",
-                wages: "3200-3500元/月",
-                discount: "免费培训|包吃",
-                name: "梅姨海鲜大排档",
-                distance: "阳西县 25km"
-              }
-            ]
-          },
-          {
-            sore: "工资最高",
-            work: [
-              {
-                img: "../../img.png",
-                staff: "服务员",
-                wages: "3200-3500元/月",
-                discount: "免费培训|包吃",
-                name: "梅姨海鲜大排档",
-                distance: "阳西县 25km"
-              }
-            ]
-          },
-        ]
+        status: 1,
+        img: "../../static/img/work/item_07.png",
+        staff: "服务员",
+        wages: "3200-3500元/月",
+        discount: "免费培训|包吃",
+        name: "梅姨海鲜大排档",
+        distance: "阳西县 25km"
       },
       {
-        post: "调酒师",
-        code: [
-          {
-            sore: "排列推荐",
-            work: [
-              {
-                img: "../../img.png",
-                staff: "服务员",
-                wages: "3200-3500元/月",
-                discount: "免费培训|包吃",
-                name: "梅姨海鲜大排档",
-                distance: "阳西县 25km"
-              }
-            ]
-          },
-          {
-            sore: "离我最近",
-            work: [
-              {
-                img: "../../img.png",
-                staff: "服务员",
-                wages: "3200-3500元/月",
-                discount: "免费培训|包吃",
-                name: "梅姨海鲜大排档",
-                distance: "阳西县 25km"
-              }
-            ]
-          },
-          {
-            sore: "工资最高",
-            work: [
-              {
-                img: "../../img.png",
-                staff: "服务员",
-                wages: "3200-3500元/月",
-                discount: "免费培训|包吃",
-                name: "梅姨海鲜大排档",
-                distance: "阳西县 25km"
-              }
-            ]
-          },
-        ]
+        status: 1,
+        img: "../../static/img/work/item_07.png",
+        staff: "厨师",
+        wages: "3200-3500元/月",
+        discount: "免费培训|包吃",
+        name: "一品香",
+        distance: "阳西县 25km"
+      },
+      {
+        status: 2,
+        img: "../../static/img/work/item_07.png",
+        staff: "web前端",
+        wages: "7000-12000元/月",
+        discount: "免费培训|包吃",
+        name: "华哥大排档",
+        distance: "阳西县 25km"
       }
     ]
+  },
+
+  activerecommend: function (e){
+    console.log(e);
+    this.setData({
+      currentIndexNav: e.target.dataset.index,
+      status: e.target.dataset.status
+    })
+    // console.log(e.target.dataset.index);
+  },
+  activetab: function (e){
+    // console.log(e.target.dataset.index);
+    this.setData({
+      currentIndexTab: e.target.dataset.index
+    })
+  },
+  scrollshow: function() {
+    console.log('scroll-show');
+    this.setData({
+      showdow: true
+    })
+    let that = this
+    wx.pageScrollTo({
+      scrollTop: 0,
+    })
+  },
+  showclose: function(){
+    this.setData({
+      showdow: false
+    })
+  },
+
+  // 禁止滚动
+  noneEnoughPeople: function(){
+    console.log(222);
   },
 
   /**

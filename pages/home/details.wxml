@@ -1,0 +1,105 @@
+<!--pages/home/details.wxml-->
+<view>
+  <!-- 轮播图 -->
+  <view class="content1">
+    <swiper indicator-dots="true" autoplay="true" circular="true">
+      <swiper-item>
+        <image src="../../static/img/home/images/swipe_02.png"></image>
+      </swiper-item>
+      <swiper-item>
+        <image src="../../static/img/home/images/swipe_02.png"></image>
+      </swiper-item>
+      <swiper-item>
+        <image src="../../static/img/home/images/swipe_02.png"></image>
+      </swiper-item>
+    </swiper>
+  </view>
+  <view class="content2">
+    <view class="name">前台</view>
+    <view class="price">3000-5000<text>元/月</text></view>
+    <view class="welfare">
+      <view class="welfare-item">基本工资</view>
+      <view class="welfare-item">包吃</view>
+      <view class="welfare-item">包住</view>
+    </view>
+    <view class="number">
+      <view class="number-item1">招聘人数：1</view>
+      <view class="number-item2">150</view>
+    </view>
+  </view>
+  <view class="content3"></view>
+
+  <!-- 招聘要求 -->
+  <view class="content4">
+    <view class="condition">招聘要求</view>
+    <view class="condition-item">
+      <text>限女性|年龄18-28岁|学历不限|经验不限</text>
+    </view>
+  </view>
+
+  <!-- 工作地点 -->
+  <view class="content5">
+    <view class="address">
+      <view class="address-left">工作地点</view>
+      <view class="address-right">距离我250km</view>
+      <view class="clear"></view>
+    </view>
+    <view class="position">
+      <image src="../../static/img/home/images/position_03.png" mode="aspectFit"></image>
+    </view>
+  </view>
+
+  <!-- 公司信息 -->
+  <view class="content6">
+    <view class="info">
+      <view class="info-left">公司信息</view>
+      <view class="info-right">1个在招岗位 <text decode>&gt;</text></view>
+      <view class="clear"></view>
+    </view>
+    <view class="info-item">
+      <view class="img">
+        <image src="../../static/img/home/images/position_06.png"></image>
+      </view>
+      <view class="company">
+        <view class="name"><text>深圳市了结果</text> </view>
+        <view class="company-item"><text>50-99|人有限责任公司|房地企业</text></view>
+      </view>
+    </view>
+  </view>
+
+  <!-- 岗位描述 -->
+  <view class="content7">
+    <view class="describe">岗位描述</view>
+    <view class="describe-info">
+      <view class="describe-item">
+        <view class="title">工作时间</view>
+        <view class="text">
+          <view class="text1">16：30-02：30</view>
+          <view class="text1">月休3天</view>
+        </view>
+      </view>
+      <view class="describe-item">
+        <view class="title">工作时间</view>
+        <view class="text">
+          <view class="text1">16：30-02：30</view>
+          <view class="text1">月休3天</view>
+        </view>
+      </view>
+      <view class="describe-item">
+        <view class="title">工作时间</view>
+        <view class="text">
+          <view class="text1">16：30-02：30</view>
+          <view class="text1">月休3天</view>
+        </view>
+      </view>
+      <view class="describe-item">
+        <view class="title">工作时间</view>
+        <view class="text">
+          <view class="text1">16：30-02：30</view>
+          <view class="text1">月休3天</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="content5">content8</view>
+</view>

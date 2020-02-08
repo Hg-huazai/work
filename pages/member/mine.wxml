@@ -22,7 +22,7 @@
   </view>
 
   <view class="content2">
-    <navigator class="content2-item"> 
+    <navigator class="content2-item" url="./resume/resume"> 
       <view class="img">
         <image src="../../static/img/mine/mine_11.png" mode="aspectFit"></image>
       </view>

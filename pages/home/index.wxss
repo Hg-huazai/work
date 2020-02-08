@@ -2,6 +2,8 @@
 .content {
   padding: 10px;
   /* width: 100%; */
+  position: relative;
+  box-sizing: border-box;
 }
 .search {
   background: #f8f8f8;
@@ -120,6 +122,10 @@
   border-radius: 8px;
   margin-bottom: 10px;
 }
+.content2 .content2-item.active {
+  background-color: #fe9900;
+  color: #fff;
+}
 
 .content3 {
   border-bottom: 1px solid #f1f0ec;
@@ -131,6 +137,11 @@
   flex: 1;
   text-align: center;
   font-size: 14px;
+}
+.content3 .content3-item .active {
+  border-bottom: 2px solid #fe9900;
+  display: inline-block;
+  padding-bottom: 3px;
 }
 
 .content4 {
@@ -198,4 +209,76 @@
 }
 .content4 .clera {
   clera:bold;
+}
+
+/* 筛选 */
+.screen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  /* padding-right: 10px； */
+  display: none;
+  background-color: #fff;
+  box-sizing: border-box;
+  padding: 0 10px;
+}
+.screen.active {
+  display: block;
+}
+.screen .scroll {
+  height: 250px;
+  /* background-color:pink; */
+  /* padding-right: 10px; */
+}
+.screen .scroll .screen-item .name{
+  font-weight: bold;
+  margin:10px 0 20px 0;
+}
+.name-item .box {
+  width: 25%;
+  text-align: center;
+  display: inline-block;
+}
+.name-item .box .box-item {
+  width: 90%;
+  text-align: center;
+  border: 1px solid #afafaf;
+  padding: 5px 0;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+.screen .bottom {
+  border-top: 1px solid #cccccc;
+}
+.screen .bottom .reset {
+  display: inline-block;
+  width: 30%;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+}
+.screen .bottom .confirm {
+  display: inline-block;
+  width: 70%;
+  background-color: #ff6a00;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+}
+
+.bgc {
+  position:absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: none;
+  height: 900px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, .3);
+}
+.bgc.active {
+  display: block;
 }

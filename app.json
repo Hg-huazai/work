@@ -1,9 +1,11 @@
 {
   "pages": [
     "pages/home/index",
+    "pages/home/details",
     "pages/index/index",
     "pages/logs/logs",
     "pages/member/mine",
+    "pages/member/resume/resume",
     "pages/news/index"
   ],
   "window": {

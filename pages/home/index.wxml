@@ -24,31 +24,38 @@
     <view class="content1">
       <view class="content1-left">为你推荐</view>
       <view  class="content1-right">
-        <view class="saixuan">筛选</view>
+        <view class="saixuan" bindtap="scrollshow">筛选</view>
         <image src="../../static/img/work/saixuan_03.png"></image>
       </view>
     </view>
+
+    <!--为你推荐-->
     <view class="content2">
-      <view class="box"  wx:for="{{list}}">
-        <view class="content2-item">{{item.post}}</view>
+      <view class="box" wx:for="{{recommend}}" wx:key="{{index}}">
+        <view class="content2-item {{index===currentIndexNav?'active':''}}" bindtap="activerecommend" data-index="{{index}}" data-status="{{item.status}}">{{item.post}}</view>
+      </view>
+      <view class="box">
+        <view class="content2-item">+</view>
+      </view>
+      
+    </view>
+
+    <!--推荐-->
+    <view class="content3">
+      <view class="content3-item"   wx:for="{{tab}}" wx:key="{{index}}" bindtap="activetab">
+        <text data-index="{{index}}" class="{{index===currentIndexTab?'active':''}}">{{item.sore}}</text>
       </view>
     </view>
-    <view class="content3">
-      <view class="content3-item">推荐排序</view>
-      <view class="content3-item">离我最近</view>
-      <view class="content3-item">工资最高</view>
-      <view class="content3-item">最新发布</view>
-        
-    </view>
-    <view class="content4">
+    <!--列表-->
+    <navigator class="content4" wx:for="{{employeInfo}}" wx:key="{{index}}" url="./details">
       <view class="content4-top">
         <view class="left">
-          <image src="../../static/img/work/item_07.png"></image>
+          <image src="{{item.img}}"></image>
         </view>
         <view class="center">
-          <text class="text1">服务员\n</text>
-          <text class="text2">3200-3500元\n</text>
-          <text class="text3">免费培训 | 包吃</text>
+          <text class="text1">{{item.staff}}\n</text>
+          <text class="text2">{{item.wages}}\n</text>
+          <text class="text3">{{item.discount}}</text>
         </view>
         <view class="right">
           <view class="enroll">
@@ -56,44 +63,191 @@
           </view>
         </view>
         <view class="clear"></view>
-          
-
       </view>
       <view class="content4-bottom">
         <view  class="left">
-          <text decode>梅姨海鲜大排档 &gt;</text>
+          <text decode>{{item.name}} &gt;</text>
         </view>
         <view class="right">
-          <text>阳西县 25km</text>
+          <text>{{item.distance}}</text>
         </view>
       </view>
-        
-    </view>
-    <view class="content4">
-      <view class="content4-top">
-        <view class="left">
-          <image src="../../static/img/work/item_07.png"></image>
-        </view>
-        <view class="center">
-          <text class="text1">服务员\n</text>
-          <text class="text2">3200-3500元\n</text>
-          <text class="text3">免费培训 | 包吃</text>
-        </view>
-        <view class="right">
-          <view class="enroll">
-            报名
+    </navigator>
+  </view>
+
+  <!--筛选-->
+  <view class="bgc {{showdow? 'active':''}}" bindtap="showclose" catchtouchmove="noneEnoughPeople"></view>
+    
+  <view class="screen {{showdow? 'active':''}}">
+      
+    <scroll-view scroll-y="true" class="scroll">
+      <view class="screen-item">
+        <view class="name">地区</view>
+        <view class="name-item">
+          <view class="box">
+            <view class="box-item">不限</view>
+          </view>
+          <view class="box">
+            <view class="box-item">不限</view>
+          </view>
+          <view class="box">
+            <view class="box-item">不限</view>
+          </view>
+          <view class="box">
+            <view class="box-item">不限</view>
+          </view>
+          <view class="box">
+            <view class="box-item">不限</view>
+          </view>
+          <view class="box">
+            <view class="box-item">不限</view>
           </view>
         </view>
       </view>
-      <view class="content4-bottom">
-        <view  class="left">
-          <text decode>梅姨海鲜大排档 &gt;</text>
-        </view>
-        <view class="right">
-          <text>阳西县 25km</text>
+      <view class="screen-item">
+        <view class="name">地区</view>
+        <view class="name-item">
+          <view class="box">
+            <view class="box-item">不限</view>
+          </view>
+          <view class="box">
+            <view class="box-item">不限</view>
+          </view>
+          <view class="box">
+            <view class="box-item">不限</view>
+          </view>
+          <view class="box">
+            <view class="box-item">不限</view>
+          </view>
+          <view class="box">
+            <view class="box-item">不限</view>
+          </view>
+          <view class="box">
+            <view class="box-item">不限</view>
+          </view>
         </view>
       </view>
-        
+      <view class="screen-item">
+        <view class="name">地区</view>
+        <view class="name-item">
+          <view class="box">
+            <view class="box-item">不限</view>
+          </view>
+          <view class="box">
+            <view class="box-item">不限</view>
+          </view>
+          <view class="box">
+            <view class="box-item">不限</view>
+          </view>
+          <view class="box">
+            <view class="box-item">不限</view>
+          </view>
+          <view class="box">
+            <view class="box-item">不限</view>
+          </view>
+          <view class="box">
+            <view class="box-item">不限</view>
+          </view>
+        </view>
+      </view>
+      <view class="screen-item">
+        <view class="name">地区</view>
+        <view class="name-item">
+          <view class="box">
+            <view class="box-item">不限</view>
+          </view>
+          <view class="box">
+            <view class="box-item">不限</view>
+          </view>
+          <view class="box">
+            <view class="box-item">不限</view>
+          </view>
+          <view class="box">
+            <view class="box-item">不限</view>
+          </view>
+          <view class="box">
+            <view class="box-item">不限</view>
+          </view>
+          <view class="box">
+            <view class="box-item">不限</view>
+          </view>
+        </view>
+      </view>
+      <view class="screen-item">
+        <view class="name">地区</view>
+        <view class="name-item">
+          <view class="box">
+            <view class="box-item">不限</view>
+          </view>
+          <view class="box">
+            <view class="box-item">不限</view>
+          </view>
+          <view class="box">
+            <view class="box-item">不限</view>
+          </view>
+          <view class="box">
+            <view class="box-item">不限</view>
+          </view>
+          <view class="box">
+            <view class="box-item">不限</view>
+          </view>
+          <view class="box">
+            <view class="box-item">不限</view>
+          </view>
+        </view>
+      </view>
+      <view class="screen-item">
+        <view class="name">地区</view>
+        <view class="name-item">
+          <view class="box">
+            <view class="box-item">不限</view>
+          </view>
+          <view class="box">
+            <view class="box-item">不限</view>
+          </view>
+          <view class="box">
+            <view class="box-item">不限</view>
+          </view>
+          <view class="box">
+            <view class="box-item">不限</view>
+          </view>
+          <view class="box">
+            <view class="box-item">不限</view>
+          </view>
+          <view class="box">
+            <view class="box-item">不限</view>
+          </view>
+        </view>
+      </view>
+      <view class="screen-item">
+        <view class="name">地区</view>
+        <view class="name-item">
+          <view class="box">
+            <view class="box-item">不限</view>
+          </view>
+          <view class="box">
+            <view class="box-item">不限</view>
+          </view>
+          <view class="box">
+            <view class="box-item">不限</view>
+          </view>
+          <view class="box">
+            <view class="box-item">不限</view>
+          </view>
+          <view class="box">
+            <view class="box-item">不限</view>
+          </view>
+          <view class="box">
+            <view class="box-item">不限</view>
+          </view>
+        </view>
+      </view>
+      
+    </scroll-view>
+    <view class="bottom">
+      <view class="reset">重置</view>
+      <view class="confirm">确认</view>
     </view>
   </view>
+  
 </view>
