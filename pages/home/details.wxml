@@ -79,27 +79,72 @@
         </view>
       </view>
       <view class="describe-item">
-        <view class="title">工作时间</view>
+        <view class="title">工作内容</view>
         <view class="text">
-          <view class="text1">16：30-02：30</view>
-          <view class="text1">月休3天</view>
-        </view>
-      </view>
-      <view class="describe-item">
-        <view class="title">工作时间</view>
-        <view class="text">
-          <view class="text1">16：30-02：30</view>
-          <view class="text1">月休3天</view>
-        </view>
-      </view>
-      <view class="describe-item">
-        <view class="title">工作时间</view>
-        <view class="text">
-          <view class="text1">16：30-02：30</view>
-          <view class="text1">月休3天</view>
+          <view class="text1">1、按照领班安排认真做好桌椅、餐厅卫生，餐厅铺台，准备好各种用品，确保正常营业使用；</view>
+          <view class="text1">2、接待顾客应主动、热情、礼貌、耐心、周到，使顾客有宾至如归之感；</view>
+          <view class="text1">3、运用礼貌语言，为客人提供最佳服务；</view>
+          <view class="text1">4、善于向顾客介绍和推销本餐厅饮品及特色菜点；</view>
+          <view class="text1">5、配合领班工作，服从领班或以上领导指挥，团结及善于帮助同事工作；</view>
+          <view class="text1">6、积极参加培训，不断提高服务技能。</view>
         </view>
       </view>
     </view>
+    <view class="tip">
+      <view class="name">温馨提示</view>
+      <view class="text">咨询岗位时，为增强彼此间的信任，您可以主动表明“您好，我是优秀青年看到您发布的招聘信息”</view>
+    </view>
   </view>
-  <view class="content5">content8</view>
+
+    <!-- 报名流程 -->
+  <view class="content5">
+    <view class="address">
+      <view class="address-left">报名流程</view>
+      <!-- <view class="address-right">距离我250km</view> -->
+      <view class="clear"></view>
+    </view>
+    <view class="position">
+      <image src="../../static/img/home/images/nearby_03.png" mode="aspectFit"></image>
+    </view>
+  </view>
+
+    <!-- 附近岗位 -->
+  <view class="content8">
+    <view class="address">
+      <view class="address-left">附近岗位</view>
+      <!-- <view class="address-right">距离我250km</view> -->
+      <view class="clear"></view>
+    </view>
+    <view class="position">
+      <image src="../../static/img/home/images/nearby_06.png" mode="aspectFit"></image>
+    </view>
+  </view>
+  
+  <!-- 附近推荐 -->
+  <navigator class="content10" wx:for="{{employeInfo}}" wx:key="{{index}}" url="./details">
+      <view class="content4-top">
+        <view class="left">
+          <image src="{{item.img}}"></image>
+        </view>
+        <view class="center">
+          <text class="text1">{{item.staff}}\n</text>
+          <text class="text2">{{item.wages}}\n</text>
+          <text class="text3">{{item.discount}}</text>
+        </view>
+        <view class="right">
+          <view class="enroll">
+            报名
+          </view>
+        </view>
+        <view class="clear"></view>
+      </view>
+      <view class="content4-bottom">
+        <view  class="left">
+          <text decode>{{item.name}} &gt;</text>
+        </view>
+        <view class="right">
+          <text>{{item.distance}}</text>
+        </view>
+      </view>
+    </navigator>
 </view>
