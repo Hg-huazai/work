@@ -1,4 +1,7 @@
 {
-  "usingComponents": {},
+  "component": true,
+  "usingComponents": {
+    "h-join": "/component/h-join/h-join"
+  },
   "navigationBarTitleText": "岗位详情"
 }

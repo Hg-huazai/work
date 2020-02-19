@@ -2,6 +2,7 @@
   "pages": [
     "pages/home/index",
     "pages/home/details",
+    "pages/home/info/info",
     "pages/index/index",
     "pages/logs/logs",
     "pages/member/mine",

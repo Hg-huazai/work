@@ -1,0 +1,66 @@
+/* component/h-join/h-join.wxss */
+.clear {
+  clear: both;
+}
+.box {
+  background-color: rgba(0, 0, 0, .3);
+  height: 100vh;
+  width: 100vw;
+  /* text-align: center; */
+  padding-top: 20%;
+  box-sizing: border-box;
+}
+.box .box-item {
+  width: 80%;
+  height: 80%;
+  background-color: #fff;
+  margin: auto;
+  border-radius: 50rpx;
+  padding: 60rpx;
+  box-sizing: border-box;
+  color: #4e4e4e;
+}
+.box .box-item .close {
+  float: right;
+  /* margin-top: 40rpx; */
+  margin-bottom: 30rpx;
+  color: #000;
+}
+.box .box-item .resume {
+  text-align: center;
+  font-size: 36rpx;
+  /* margin-top: 50rpx; */
+}
+.box .box-item .tip {
+  text-align: center;
+  font-size: 24rpx;
+}
+.box .box-item .text1 {
+  height: 100rpx;
+  line-height: 100rpx;
+  font-size: 28rpx;
+  border-bottom: 2rpx solid #e6e6e6;
+}
+.box .box-item .text1 input {
+  text-align:right;
+  /* background-color: pink; */
+  margin-top: 25rpx;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+.box .box-item .now {
+  text-align: center;
+  margin-top: 30rpx;
+}
+.box .box-item .now .now-item{
+  text-align: center;
+  display: inline-block;
+  padding: 15rpx 50rpx;
+  background-color: #ffcc00;
+  border-radius: 40rpx;
+  font-size: 28rpx;
+}

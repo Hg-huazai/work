@@ -1,16 +1,17 @@
 <!--pages/home/details.wxml-->
 <view>
   <!-- 轮播图 -->
+  <h-join/>
   <view class="content1">
-    <swiper indicator-dots="true" autoplay="true" circular="true">
+    <swiper indicator-dots="true" autoplay="true" circular="true" class="swiper">
       <swiper-item>
-        <image src="../../static/img/home/images/swipe_02.png"></image>
+        <image src="../../static/img/home/images/swipe_02.png" mode="widthFix"></image>
       </swiper-item>
       <swiper-item>
-        <image src="../../static/img/home/images/swipe_02.png"></image>
+        <image src="../../static/img/home/images/swipe_02.png" mode="widthFix"></image>
       </swiper-item>
       <swiper-item>
-        <image src="../../static/img/home/images/swipe_02.png"></image>
+        <image src="../../static/img/home/images/swipe_02.png" mode="widthFix"></image>
       </swiper-item>
     </swiper>
   </view>
@@ -50,7 +51,7 @@
   </view>
 
   <!-- 公司信息 -->
-  <view class="content6">
+  <navigator class="content6"url="./info/info" >
     <view class="info">
       <view class="info-left">公司信息</view>
       <view class="info-right">1个在招岗位 <text decode>&gt;</text></view>
@@ -65,7 +66,7 @@
         <view class="company-item"><text>50-99|人有限责任公司|房地企业</text></view>
       </view>
     </view>
-  </view>
+  </navigator>
 
   <!-- 岗位描述 -->
   <view class="content7">
@@ -122,29 +123,58 @@
   
   <!-- 附近推荐 -->
   <navigator class="content10" wx:for="{{employeInfo}}" wx:key="{{index}}" url="./details">
-      <view class="content4-top">
-        <view class="left">
-          <image src="{{item.img}}"></image>
-        </view>
-        <view class="center">
-          <text class="text1">{{item.staff}}\n</text>
-          <text class="text2">{{item.wages}}\n</text>
-          <text class="text3">{{item.discount}}</text>
-        </view>
-        <view class="right">
-          <view class="enroll">
-            报名
-          </view>
-        </view>
-        <view class="clear"></view>
+    <view class="content4-top">
+      <view class="left">
+        <image src="{{item.img}}"></image>
       </view>
-      <view class="content4-bottom">
-        <view  class="left">
-          <text decode>{{item.name}} &gt;</text>
-        </view>
-        <view class="right">
-          <text>{{item.distance}}</text>
+      <view class="center">
+        <text class="text1">{{item.staff}}\n</text>
+        <text class="text2">{{item.wages}}\n</text>
+        <text class="text3">{{item.discount}}</text>
+      </view>
+      <view class="right">
+        <view class="enroll">
+          报名
         </view>
       </view>
-    </navigator>
+      <view class="clear"></view>
+    </view>
+    <view class="content4-bottom">
+      <view  class="left">
+        <text decode>{{item.name}} &gt;</text>
+      </view>
+      <view class="right">
+        <text>{{item.distance}}</text>
+      </view>
+    </view>
+    <view class="img">
+      <image src="../../static/img/work/sanjiaoxing.png" mode="widthFix"></image>
+    </view>
+  </navigator>
+
+  <!-- 底部固定 -->
+  <view class="content11">
+    <view class="left">
+      <view class="item">
+        <view class="img">
+          <image src="../../static/img/home/images/images/bottom_03.png" mode="widthFix" style="width:40rpx;"></image>
+        </view>
+        <view class="text">分享</view>
+      </view>
+      <view class="item">
+        <view class="img">
+          <image src="../../static/img/home/images/images/images/like_05.png" mode="widthFix" style="width:40rpx;"></image>
+        </view>
+        <view class="text">收藏</view>
+      </view>
+      <view class="item">
+        <view class="img">
+          <image src="../../static/img/home/images/images/bottom_07.png" mode="widthFix" style="width:40rpx;"></image>
+        </view>
+        <view class="text">咨询</view>
+      </view>
+    </view>
+    <view class="right">马上报名</view>
+    <view class="clear"></view>
+  </view>
 </view>

@@ -9,6 +9,9 @@ Page({
     currentIndexTab: 0,
     status: 1,
     showdow: false,
+    current1: 0,
+    current2: 0,
+    current3: 0,
     recommend: [
       { post: "全部岗位", status: 1},
       { post: "全部岗位", status: 2},
@@ -52,7 +55,16 @@ Page({
         name: "华哥大排档",
         distance: "阳西县 25km"
       }
-    ]
+    ],
+    choice: [
+      {name:"不限"},
+      { name: "不限" },
+      { name: "不限" },
+      { name: "不限" },
+      { name: "不限" },
+      { name: "不限" }
+    ],
+    city: "阳江"
   },
 
   activerecommend: function (e){
@@ -82,6 +94,26 @@ Page({
   showclose: function(){
     this.setData({
       showdow: false
+    })
+  },
+
+  // 筛选点击
+  choicetap1(e){
+    console.log(e)
+    this.setData({
+      current1:e.currentTarget.dataset.aid
+    })
+  },
+  choicetap2(e) {
+    console.log(e)
+    this.setData({
+      current2: e.currentTarget.dataset.bid
+    })
+  },
+  choicetap3(e) {
+    console.log(e)
+    this.setData({
+      current3: e.currentTarget.dataset.cid
     })
   },
 

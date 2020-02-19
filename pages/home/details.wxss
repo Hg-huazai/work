@@ -2,6 +2,12 @@
 .clear {
   clear: both;
 }
+.content1 .swiper {
+  padding: 0 20rpx;
+}
+.content1 swiper-item image {
+  width: 100%;
+}
 .content2 {
   padding: 10px 15px;
   border-bottom: 10px solid #f1f1f1;
@@ -46,6 +52,7 @@
   padding: 10px 15px;
   border-bottom: 10px solid #f1f1f1;
 }
+
 .content4 .condition {
   font-weight: bold;
 }
@@ -199,6 +206,15 @@
   padding-top: 20px;  
   height: 130px;
   border-bottom: 15px solid #f1f1f1;
+  position: relative;
+}
+.content10 .img {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.content10 .img image {
+  width: 80rpx;
 }
 .content10 .content4-top {
   height: 85px;
@@ -260,4 +276,38 @@
 }
 .content10 .clera {
   clera:bold;
+}
+.content11 {
+  position:fixed;
+  bottom: 0;
+  background-color: #fff;
+  width: 100%;
+  height: 117rpx;
+  
+}
+.content11 .clear {
+  clear: both;
+}
+.content11 .left {
+  float: left;
+  width: 60%;
+  display: flex;
+  padding: 15rpx 0;
+  box-sizing: border-box;
+}
+.content11 .left .item {
+  display: inline-block;
+  flex: 1;
+  text-align: center;
+}
+.content11 .left .item .text {
+  font-size: 28rpx;
+}
+.content11 .right {
+  float: right;
+  width: 40%;
+  text-align: center;
+  background-color: #ffcc00;
+  height: 100%;
+  line-height: 117rpx;
 }

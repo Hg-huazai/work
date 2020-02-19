@@ -1,0 +1,54 @@
+<!--component/h-join/h-join.wxml-->
+<view>
+  <view class="box" style="display:{{show?'':'none'}};">
+    <view class="box-item">
+      <view class="close">X
+        <view class="clear"></view>
+      </view>
+      <view class="resume">我的简历</view>
+      <view class="tip">亲，您需要先创建简历，才能报名哦！</view>
+      <view class="text1">
+        <view class="left">真实姓名</view>
+        <view class="right"><input type="number"></input></view>
+        <view class="clear"></view>
+      </view>
+      <view class="text1">
+        <view class="left">性别</view>
+        <view class="right">
+          <view class="page__bd">
+        <view class="section section_gap">
+            <radio-group class="radio-group" bindchange="radioChange">
+                <radio class="radio" wx:for-items="{{items}}" wx:key="name" value="{{item.name}}" checked="{{item.checked}}">
+                    <text>{{item.value}}</text>
+                </radio>
+            </radio-group>
+        </view>
+    </view>
+        </view>
+      </view>
+      <view class="text1">
+        <view class="left">出生日期</view>
+        <view class="right">请选择出生年限 <text decode>&gt;</text></view>
+        <view class="clear"></view>
+      </view>
+      <view class="text1">
+        <view class="left">联系电话</view>
+        <view class="right"><input type="number"></input></view>
+        <view class="clear"></view>
+      </view>
+      <view class="text1">
+        <view class="left">学历</view>
+        <view class="right">请选择学历 <text decode>&gt;</text></view>
+        <view class="clear"></view>
+      </view>
+      <view class="text1">
+        <view class="left">工作年限</view>
+        <view class="right">请选择工作年限 <text decode>&gt;</text></view>
+        <view class="clear"></view>
+      </view>
+      <view class="now">
+        <view class="now-item">立即报名</view>
+      </view>
+    </view>
+  </view>
+</view>

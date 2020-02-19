@@ -1,7 +1,7 @@
 <!--index.wxml-->
 <view class="content">
   <view class="search">
-    <navigator class="city">阳江</navigator>
+    <navigator class="city" url="./city/city">{{city}}<view class="tubiao"></view></navigator>
     <navigator class="search-item">搜索岗位/公司</navigator>
   </view>
 
@@ -72,11 +72,14 @@
           <text>{{item.distance}}</text>
         </view>
       </view>
+      <view class="img">
+        <image src="../../static/img/work/sanjiaoxing.png" mode="widthFix"></image>
+      </view>
     </navigator>
   </view>
 
   <!--筛选-->
-  <view class="bgc {{showdow? 'active':''}}" bindtap="showclose" catchtouchmove="noneEnoughPeople"></view>
+  <view class="bgc {{showdow? 'active':''}}" bindtap="showclose" catchtouchmove="noneEnoughPeople" catchtouchmove='true'></view>
     
   <view class="screen {{showdow? 'active':''}}">
       
@@ -84,161 +87,24 @@
       <view class="screen-item">
         <view class="name">地区</view>
         <view class="name-item">
-          <view class="box">
-            <view class="box-item">不限</view>
-          </view>
-          <view class="box">
-            <view class="box-item">不限</view>
-          </view>
-          <view class="box">
-            <view class="box-item">不限</view>
-          </view>
-          <view class="box">
-            <view class="box-item">不限</view>
-          </view>
-          <view class="box">
-            <view class="box-item">不限</view>
-          </view>
-          <view class="box">
-            <view class="box-item">不限</view>
+          <view class="box {{index===current1? 'active':''}}" wx:for="{{choice}}" wx:key="{{index}}" data-aid="{{index}}" bindtap="choicetap1">
+            <view class="box-item">{{item.name}}</view>
           </view>
         </view>
       </view>
       <view class="screen-item">
         <view class="name">地区</view>
         <view class="name-item">
-          <view class="box">
-            <view class="box-item">不限</view>
-          </view>
-          <view class="box">
-            <view class="box-item">不限</view>
-          </view>
-          <view class="box">
-            <view class="box-item">不限</view>
-          </view>
-          <view class="box">
-            <view class="box-item">不限</view>
-          </view>
-          <view class="box">
-            <view class="box-item">不限</view>
-          </view>
-          <view class="box">
-            <view class="box-item">不限</view>
+          <view class="box {{index===current2? 'active':''}}" wx:for="{{choice}}" wx:key="{{index}}" data-bid="{{index}}" bindtap="choicetap2">
+            <view class="box-item">{{item.name}}</view>
           </view>
         </view>
       </view>
       <view class="screen-item">
         <view class="name">地区</view>
         <view class="name-item">
-          <view class="box">
-            <view class="box-item">不限</view>
-          </view>
-          <view class="box">
-            <view class="box-item">不限</view>
-          </view>
-          <view class="box">
-            <view class="box-item">不限</view>
-          </view>
-          <view class="box">
-            <view class="box-item">不限</view>
-          </view>
-          <view class="box">
-            <view class="box-item">不限</view>
-          </view>
-          <view class="box">
-            <view class="box-item">不限</view>
-          </view>
-        </view>
-      </view>
-      <view class="screen-item">
-        <view class="name">地区</view>
-        <view class="name-item">
-          <view class="box">
-            <view class="box-item">不限</view>
-          </view>
-          <view class="box">
-            <view class="box-item">不限</view>
-          </view>
-          <view class="box">
-            <view class="box-item">不限</view>
-          </view>
-          <view class="box">
-            <view class="box-item">不限</view>
-          </view>
-          <view class="box">
-            <view class="box-item">不限</view>
-          </view>
-          <view class="box">
-            <view class="box-item">不限</view>
-          </view>
-        </view>
-      </view>
-      <view class="screen-item">
-        <view class="name">地区</view>
-        <view class="name-item">
-          <view class="box">
-            <view class="box-item">不限</view>
-          </view>
-          <view class="box">
-            <view class="box-item">不限</view>
-          </view>
-          <view class="box">
-            <view class="box-item">不限</view>
-          </view>
-          <view class="box">
-            <view class="box-item">不限</view>
-          </view>
-          <view class="box">
-            <view class="box-item">不限</view>
-          </view>
-          <view class="box">
-            <view class="box-item">不限</view>
-          </view>
-        </view>
-      </view>
-      <view class="screen-item">
-        <view class="name">地区</view>
-        <view class="name-item">
-          <view class="box">
-            <view class="box-item">不限</view>
-          </view>
-          <view class="box">
-            <view class="box-item">不限</view>
-          </view>
-          <view class="box">
-            <view class="box-item">不限</view>
-          </view>
-          <view class="box">
-            <view class="box-item">不限</view>
-          </view>
-          <view class="box">
-            <view class="box-item">不限</view>
-          </view>
-          <view class="box">
-            <view class="box-item">不限</view>
-          </view>
-        </view>
-      </view>
-      <view class="screen-item">
-        <view class="name">地区</view>
-        <view class="name-item">
-          <view class="box">
-            <view class="box-item">不限</view>
-          </view>
-          <view class="box">
-            <view class="box-item">不限</view>
-          </view>
-          <view class="box">
-            <view class="box-item">不限</view>
-          </view>
-          <view class="box">
-            <view class="box-item">不限</view>
-          </view>
-          <view class="box">
-            <view class="box-item">不限</view>
-          </view>
-          <view class="box">
-            <view class="box-item">不限</view>
+          <view class="box {{index===current3? 'active':''}}" wx:for="{{choice}}" wx:key="{{index}}" data-cid="{{index}}" bindtap="choicetap3">
+            <view class="box-item">{{item.name}}</view>
           </view>
         </view>
       </view>

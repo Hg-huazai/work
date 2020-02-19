@@ -1,0 +1,158 @@
+/* pages/home/info/info.wxss */
+.clear {
+  clear: both;
+}
+.content1 .swiper {
+  padding: 0 20rpx;
+}
+.content1 swiper-item image {
+  width: 100%;
+}
+.content2 {
+  padding: 10px 15px;
+  border-bottom: 10px solid #f1f1f1;
+}
+.content2 .left {
+  display: inline-block;
+  width: 70%;
+}
+.content2 .left .name {
+  font-weight: bold;
+  font-size: 36rpx;
+  margin-bottom: 20rpx;
+  vertical-align: middle;
+}
+.content2 .left .name image {
+  width: 70rpx;
+  margin-top: 15rpx;
+}
+.content2 .left .number1 {
+  font-size: 26rpx;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  color: #c4c4c4;
+}
+.content2 .right {
+  display: inline-block;
+  width: 30%;
+}
+.content2 .right .img {
+  text-align: center;
+}
+.content2 .right .img image {
+  width: 140rpx;
+}
+.content2 .number {
+  color: #666666;
+  padding-top: 10px;
+  font-size: 14px;
+  border-top: 2rpx solid #c4c4c4;
+}
+.content2 .number .number-item1 {
+  float: left;
+  /* display: inline-block; */
+  width: 80%;
+}
+.content2 .number .number-item1 .img {
+  display: inline-block;
+  vertical-align: middle;
+}
+.content2 .number .number-item1 .img image {
+  width: 40rpx;
+}
+.content2 .number .number-item1 .text {
+  display: inline-block;
+  width: 80%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  vertical-align: middle;
+  padding-left: 15rpx;
+  
+}
+.content2 .number .number-item2 {
+  float: right;
+  display: inline-block;
+  height: 57rpx;
+  line-height: 57rpx;
+}
+
+/* 招聘要求 */
+.content4 {
+  padding: 10px 15px;
+  border-bottom: 10px solid #f1f1f1;
+}
+
+.content4 .condition {
+  font-weight: bold;
+}
+.content4 .condition-item {
+  font-size: 14px;
+  color: #686868;
+  padding: 10px 0 10px 0;
+}
+.content4 .condition-item .text1 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
+.content4 .condition-item .text2 {
+  font-size: 30rpx;
+  color:#6698ed;
+}
+.content5 {
+  padding: 20rpx;
+}
+.content5 .top {
+  border-bottom: 2rpx solid #f1f1f1;
+  padding: 20rpx 0;
+  font-weight: bold;
+}
+.content5 .item {
+  padding: 15rpx 10rpx;
+  position: relative;
+  border-bottom: 2rpx solid #f1f1f1;
+}
+.content5 .item .left {
+  display: inline-block;
+  width: 70%;
+}
+.content5 .item .left .name {
+  font-weight: bold;
+  font-size: 32rpx;
+}
+.content5 .item .left .money {
+  color: #fc3109;
+  margin: 20rpx 0;
+}
+.content5 .item .left .money text {
+  font-weight: bold;
+}
+.content5 .item .left .chi {
+  font-size: 30rpx;
+  color: #686868;
+}
+.content5 .item .right {
+  display: inline-block;
+  width: 30%;
+  position: absolute;
+  top: 80rpx;
+}
+.content5 .item .right .item {
+  display: inline-block;
+  border: 2rpx solid #ffd7a1;
+  color: #ffd7a1;
+  padding: 10rpx 40rpx;
+  border-radius: 50rpx;
+  /* margin-bottom: 40rpx; */
+}
+.content5 .item .img {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.content5 .item .img image{
+  width: 100rpx;
+}

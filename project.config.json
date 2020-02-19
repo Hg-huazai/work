@@ -78,6 +78,27 @@
 					"id": -1,
 					"name": "pages/home/details",
 					"pathName": "pages/home/details",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "报名join",
+					"pathName": "component/h-join/h-join",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "城市",
+					"pathName": "pages/home/city/city",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "公司info",
+					"pathName": "pages/home/info/info",
 					"scene": null
 				}
 			]

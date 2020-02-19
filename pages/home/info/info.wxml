@@ -1,0 +1,82 @@
+<!--pages/home/info/info.wxml-->
+<view>
+  <!-- 轮播图 -->
+  <h-join/>
+  <view class="content1">
+    <swiper indicator-dots="true" autoplay="true" circular="true" class="swiper">
+      <swiper-item>
+        <image src="../../../static/img/home/images/swipe_02.png" mode="widthFix"></image>
+      </swiper-item>
+      <swiper-item>
+        <image src="../../../static/img/home/images/swipe_02.png" mode="widthFix"></image>
+      </swiper-item>
+      <swiper-item>
+        <image src="../../../static/img/home/images/swipe_02.png" mode="widthFix"></image>
+      </swiper-item>
+    </swiper>
+  </view>
+  <view class="content2">
+    <view class="left">
+      <view class="name">深圳市宝安区沙井龙华艺汽车服务中心 <image src="../../../static/img/home/images/info_06.png" mode="widthFix"></image></view>
+      <view class="number1">限女性|年龄18-28岁|学历不限|经验不限</view>
+    </view>
+    <view class="right">
+      <view class="img">
+        <image src="../../../static/img/home/images/info_03.png" mode="widthFix"></image>
+      </view>
+    </view>
+    <view class="number">
+      <view class="number-item1">
+        <view class="img">
+          <image src="../../../static/img/home/images/info_11.png" mode="widthFix"></image>
+        </view>
+        <view class="text">广东省深圳市宝安区沙井龙华艺汽车服务中心汽车服务中心</view>
+      </view>
+      <view class="number-item2">65km <text decode>&gt;</text></view>
+      <view class="clear"></view>
+    </view>
+  </view>
+  <view class="content3"></view>
+
+  <!-- 招聘要求 -->
+  <view class="content4">
+    <view class="condition">企业介绍</view>
+    <view class="condition-item">
+      <text class="text1">深圳市宝安区沙井龙华艺汽车服务中心深圳市宝安区沙井龙华艺汽车服务中心深圳市宝安区沙井龙华艺汽车服务中心深圳市宝安区沙井龙华艺汽车服务中心深圳市宝安区沙井龙华艺汽车服务中心深圳市宝安区沙井龙华艺汽车服务中心</text><text class="text2">查看全部</text>
+    </view>
+  </view>
+
+  <!-- 在招岗位 -->
+  <view class="content5">
+    <view class="top">在招岗位</view>
+    <view class="item">
+      <view class="left ">
+        <view class="name">汽车美容师</view>
+        <view class="money"><text>4000-5000</text> 元/月</view>
+        <view class="chi">包吃 | 包住</view>
+      </view>
+      <view class="right">
+        <view class="item">报名</view>
+      </view>
+      <view class="img">
+          <image src="../../../static/img/work/sanjiaoxing.png" mode="widthFix"></image>
+        </view>
+    </view>
+    <view class="item">
+      <view class="left ">
+        <view class="name">汽车美容师</view>
+        <view class="money"><text>4000-5000</text> 元/月</view>
+        <view class="chi">包吃 | 包住</view>
+      </view>
+      <view class="right">
+        <view class="item">报名</view>
+      </view>
+      <view class="img">
+          <image src="../../../static/img/work/sanjiaoxing.png" mode="widthFix"></image>
+        </view>
+    </view>
+
+  </view>
+
+
+</view>
