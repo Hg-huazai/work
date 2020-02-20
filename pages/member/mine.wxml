@@ -34,7 +34,7 @@
       </view>
       <view class="text">邀请有奖</view>
     </navigator>
-    <navigator class="content2-item"> 
+    <navigator class="content2-item" url="./collection/collection"> 
       <view class="img">
         <image src="../../static/img/mine/mine_15.png" mode="aspectFit"></image>
       </view>
@@ -44,7 +44,7 @@
   <view class="content3">
     <view class="top">
       <text class="t-left">报名记录</text>
-      <navigator>
+      <navigator url="./record/record">
         <text class="t-right" decode>查看全部记录 &gt;</text>
       </navigator>
     </view> 
@@ -78,7 +78,8 @@
   <view class="content4">
     <view class="item">
       <view class="img">
-        <image src="../../static/img/mine/mine_36.png"></image>
+        <!-- <image src="../../static/img/mine/mine_36.png"></image> -->
+        <view class="iconfont icon-shandian"></view>
       </view>
         <navigator class="left">
           <text>求职意向</text>
@@ -88,7 +89,8 @@
     </view>
     <view class="item">
       <view class="img">
-        <image src="../../static/img/mine/mine_39.png"></image>
+        <!-- <image src="../../static/img/mine/mine_39.png"></image> -->
+        <view class="iconfont icon-shandian"></view>
       </view>
         <navigator class="left">
           <text>闪聘模式</text>
@@ -101,7 +103,7 @@
   <view class="content4">
     <view class="item">
       <view class="img">
-        <image src="../../static/img/mine/mine_41.png"></image>
+        <view class="iconfont icon-lianxikefu"></view>
       </view>
         <navigator class="left">
           <text>联系客服</text>

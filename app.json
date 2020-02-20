@@ -7,6 +7,13 @@
     "pages/logs/logs",
     "pages/member/mine",
     "pages/member/resume/resume",
+    "pages/member/record/record",
+    "pages/member/load/load",
+    "pages/member/collection/collection",
+    "pages/member/info/personal-data/personal-data",
+    "pages/member/info/job-wanted/job-wanted",
+    "pages/member/info/job-experience/job-experience",
+    "pages/member/info/education-experience/education-experience",
     "pages/news/index"
   ],
   "window": {

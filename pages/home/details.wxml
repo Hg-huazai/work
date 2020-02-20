@@ -1,7 +1,7 @@
 <!--pages/home/details.wxml-->
 <view>
   <!-- 轮播图 -->
-  <h-join/>
+  <h-join style="display:{{show}}"/>
   <view class="content1">
     <swiper indicator-dots="true" autoplay="true" circular="true" class="swiper">
       <swiper-item>
@@ -174,7 +174,7 @@
         <view class="text">咨询</view>
       </view>
     </view>
-    <view class="right">马上报名</view>
+    <view class="right" bindtap="infotap">马上报名</view>
     <view class="clear"></view>
   </view>
 </view>

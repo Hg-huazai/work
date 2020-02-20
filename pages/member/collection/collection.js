@@ -1,4 +1,4 @@
-// pages/home/details.js
+// pages/member/collection/collection.js
 Page({
 
   /**
@@ -8,7 +8,7 @@ Page({
     employeInfo: [
       {
         status: 1,
-        img: "../../static/img/work/item_07.png",
+        img: "../../../static/img/work/item_07.png",
         staff: "服务员",
         wages: "3200-3500元/月",
         discount: "免费培训|包吃",
@@ -17,7 +17,7 @@ Page({
       },
       {
         status: 1,
-        img: "../../static/img/work/item_07.png",
+        img: "../../../static/img/work/item_07.png",
         staff: "厨师",
         wages: "3200-3500元/月",
         discount: "免费培训|包吃",
@@ -26,7 +26,7 @@ Page({
       },
       {
         status: 2,
-        img: "../../static/img/work/item_07.png",
+        img: "../../../static/img/work/item_07.png",
         staff: "web前端",
         wages: "7000-12000元/月",
         discount: "免费培训|包吃",
@@ -34,12 +34,6 @@ Page({
         distance: "阳西县 25km"
       }
     ],
-    show: 'none',
-  },
-  infotap (){
-    this.setData({
-      show:'block'
-    })
   },
 
   /**

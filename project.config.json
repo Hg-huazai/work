@@ -99,6 +99,55 @@
 					"id": -1,
 					"name": "公司info",
 					"pathName": "pages/home/info/info",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "个人资料",
+					"pathName": "pages/member/info/personal-data/personal-data",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "教育经验",
+					"pathName": "pages/member/info/education-experience/education-experience",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "工作经验",
+					"pathName": "pages/member/info/job-experience/job-experience",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "求职期望",
+					"pathName": "pages/member/info/job-wanted/job-wanted",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "岗位收藏",
+					"pathName": "pages/member/collection/collection",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "报名记录",
+					"pathName": "pages/member/record/record",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "报名加载",
+					"pathName": "pages/member/load/load",
 					"scene": null
 				}
 			]

@@ -3,6 +3,9 @@
   clear: both;
 }
 .box {
+  position: fixed;
+  top: 0;
+  z-index: 1000;
   background-color: rgba(0, 0, 0, .3);
   height: 100vh;
   width: 100vw;
@@ -10,13 +13,17 @@
   padding-top: 20%;
   box-sizing: border-box;
 }
+.box.active {
+  display: none;
+}
 .box .box-item {
   width: 80%;
-  height: 80%;
+  height: 85%;
   background-color: #fff;
   margin: auto;
   border-radius: 50rpx;
   padding: 60rpx;
+  /* padding-bottom: 90rpx; */
   box-sizing: border-box;
   color: #4e4e4e;
 }
@@ -63,4 +70,5 @@
   background-color: #ffcc00;
   border-radius: 40rpx;
   font-size: 28rpx;
+  /* margin-bottom: 30rpx; */
 }

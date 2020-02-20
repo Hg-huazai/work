@@ -1,0 +1,44 @@
+<!--pages/member/info/education-experience/education-experience.wxml-->
+<view class="content">
+  <form>
+    <view class="content2">
+      <view class="content2-item">
+        <view class="text1">
+          <view class="left">毕业学校</view>
+          <view class="right"><input type="number" placeholder="请输入毕业学校"></input></view>
+          <view class="clear"></view>
+        </view>
+        <view class="text1">
+          <view class="left">专业</view>
+          <view class="right"><input type="number" placeholder="请输入主修专业"></input></view>
+          <view class="clear"></view>
+        </view>
+        <view class="text1">
+          <view class="left">学历</view>
+          <view class="right">请选择学历 <text decode>&gt;</text></view>
+          <view class="clear"></view>
+        </view>
+        <view class="text1">
+          <view class="left">入学时间</view>
+          <view class="right">请选择 <text decode>&gt;</text></view>
+          <view class="clear"></view>
+        </view>
+        <view class="text1">
+          <view class="left">毕业时间</view>
+          <view class="right">请选择 <text decode>&gt;</text></view>
+          <view class="clear"></view>
+        </view>
+      </view>
+    </view>
+    <view class="content3">
+      <view class="top">在校经验</view>
+      <view class="textarea"><textarea placeholder="完善您在校的经历更容易获得面试机会哦" maxlength="{{max}}" bindinput="inputs"></textarea></view>
+      <view class="number">0/200</view>
+    </view>
+    <view class="content4">
+      <view class="button">
+        <button size="mini" >保存按钮</button>
+      </view>
+    </view>
+  </form>
+</view>

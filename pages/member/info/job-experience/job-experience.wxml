@@ -1,0 +1,53 @@
+<!--pages/member/info/job-experience/job-experience.wxml-->
+<!--pages/member/info/education-experience/education-experience.wxml-->
+<view class="content">
+  <form>
+    <view class="content2">
+      <view class="content2-item">
+        <view class="text1">
+          <view class="left">工作岗位</view>
+          <view class="right">请选择工作岗位
+            <view class="iconfont icon-jiantou"></view>
+            <!-- <text decode>&gt;</text> -->
+          </view>
+          <view class="clear"></view>
+        </view>
+        <view class="text1">
+          <view class="left">所在企业</view>
+          <view class="right"><input type="number" placeholder="请输入企业名称"></input></view>
+          <view class="clear"></view>
+        </view>
+        <view class="text1">
+          <view class="left">工作城市</view>
+          <view class="right">请选择<view class="iconfont icon-jiantou"></view></view>
+          <view class="clear"></view>
+        </view>
+        <view class="text1">
+          <view class="left">入职时间</view>
+          <view class="right">请选择<view class="iconfont icon-jiantou"></view></view>
+          <view class="clear"></view>
+        </view>
+        <view class="text1">
+          <view class="left">离职时间</view>
+          <view class="right">请选择(不填默认为“至今”) <view class="iconfont icon-jiantou"></view></view>
+          <view class="clear"></view>
+        </view>
+      </view>
+    </view>
+    <view class="content3">
+      <view class="top">
+        <view class="left">工作内容</view>
+        <view class="right">使用模板</view>
+        <view class="clear"></view>
+      </view>
+      <view class="textarea"><textarea placeholder="完善您的工作经历更容易获得面试机会哦" maxlength="{{max}}" bindinput="inputs"></textarea></view>
+      <view class="number">0/200</view>
+    </view>
+    <view class="content4">
+      <view class="button">
+        <button size="mini" >保存按钮</button>
+      </view>
+    </view>
+  </form>
+</view>
+

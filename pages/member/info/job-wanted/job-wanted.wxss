@@ -1,0 +1,65 @@
+/* pages/member/info/job-wanted/job-wanted.wxss */
+/* pages/member/info/job-experience/job-experience.wxss */
+/* pages/member/info/education-experience/education-experience.wxss */
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+.clear {
+  clear: both;
+}
+.content {
+  background-color: #e6e6e6;
+  height: 100vh;
+  width: 100vw;
+}
+.content2 {
+  background-color: #fff;
+  color: #474747;
+  padding: 10px 10px 0 10px;
+  border-top: 10px solid #f1f1f1;
+}
+.content2 .content2-name {
+  font-weight: bold;
+  margin: 10px 0 30px 0;
+}
+.content2 .text1 {
+  height: 100rpx;
+  line-height: 100rpx;
+  font-size: 32rpx;
+  border-bottom: 2rpx solid #e6e6e6;
+}
+.content2 .text1 input {
+  text-align:right;
+  /* background-color: pink; */
+  margin-top: 25rpx;
+  color: #474747;
+}
+.content2 .text1 radio {
+  margin-left: 15rpx;
+}
+
+.content3 {
+  background-color: #fff;
+  padding: 10px;
+  border-top: 10px solid #f1f1f1;
+}
+
+
+.content4 {
+  /* background-color: #fff; */
+  margin-top: 20rpx;
+  padding: 40rpx 0;
+}
+.content4 .button {
+  text-align: center;
+}
+.content4 .button button {
+  text-align: center;
+  background-color: #ffcb00;
+  font-size: 28rpx;
+  border-radius: 40rpx;
+  padding: 10rpx 50rpx;
+}

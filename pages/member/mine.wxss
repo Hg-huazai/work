@@ -3,6 +3,18 @@ page {
 }
 .content {
 }
+.iconfont.icon-qiuzhi {
+  font-size: 90rpx;
+  color: red;
+}
+.iconfont.icon-lianxikefu {
+  font-size: 90rpx;
+  color: red;
+}
+.iconfont.icon-shandian {
+  font-size: 90rpx;
+  color: red;
+}
 .content1 {
   margin: 0 15px;
   margin-bottom: 20px;

@@ -1,0 +1,33 @@
+<!--pages/member/collection/collection.wxml-->
+<view>
+  <!--列表-->
+    <navigator class="content4" wx:for="{{employeInfo}}" wx:key="{{index}}" url="./details">
+      <view class="content4-top">
+        <view class="left">
+          <image src="{{item.img}}"></image>
+        </view>
+        <view class="center">
+          <text class="text1">{{item.staff}}\n</text>
+          <text class="text2">{{item.wages}}\n</text>
+          <text class="text3">{{item.discount}}</text>
+        </view>
+        <view class="right">
+          <view class="enroll">
+            取消收藏
+          </view>
+        </view>
+        <view class="clear"></view>
+      </view>
+      <view class="content4-bottom">
+        <view  class="left">
+          <text decode>{{item.name}} &gt;</text>
+        </view>
+        <view class="right">
+          <text>{{item.distance}}</text>
+        </view>
+      </view>
+      <view class="img">
+        <image src="../../../static/img/work/sanjiaoxing.png" mode="widthFix"></image>
+      </view>
+    </navigator>
+</view>

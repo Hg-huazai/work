@@ -3,7 +3,7 @@
   <view class="content1">
     <view class="content1-top">
       <view class="text1">基本信息</view>
-      <view class="text2">编辑 <text decode="true"> &gt;</text></view>
+      <navigator class="text2" url="../info/personal-data/personal-data">编辑 <text decode="true"> &gt;</text></navigator>
       <view class="clear"></view>
     </view>
     <view class="content1-bottom">
@@ -22,21 +22,21 @@
   <view class="content2">
     <view class="content2-name">求职期望</view>
     <view class="content2-item">
-      <navigator class="text1"> <text>+</text> 点击添加</navigator>
+      <navigator class="text1" url="../info/job-wanted/job-wanted"> <text>+</text> 点击添加</navigator>
       <view class="text2">请添加您希望的工作类型</view>
     </view>
   </view>
   <view class="content2">
     <view class="content2-name">工作经验</view>
     <view class="content2-item">
-      <navigator class="text1"> <text>+</text> 点击添加</navigator>
+      <navigator class="text1" url="../info/job-experience/job-experience"> <text>+</text> 点击添加</navigator>
       <view class="text2">请添加您的工作类型，工作职位等信息</view>
     </view>
   </view>
   <view class="content2">
     <view class="content2-name">教育经历</view>
     <view class="content2-item">
-      <navigator class="text1"> <text>+</text> 点击添加</navigator>
+      <navigator class="text1" url="../info/education-experience/education-experience"> <text>+</text> 点击添加</navigator>
       <view class="text2">请添加您的教育经历，毕业学校等信息</view>
     </view>
   </view>

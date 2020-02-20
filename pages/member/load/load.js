@@ -1,4 +1,4 @@
-// pages/home/details.js
+// pages/member/load/load.js
 Page({
 
   /**
@@ -8,38 +8,14 @@ Page({
     employeInfo: [
       {
         status: 1,
-        img: "../../static/img/work/item_07.png",
+        img: "../../../static/img/work/item_07.png",
         staff: "服务员",
         wages: "3200-3500元/月",
         discount: "免费培训|包吃",
         name: "梅姨海鲜大排档",
         distance: "阳西县 25km"
       },
-      {
-        status: 1,
-        img: "../../static/img/work/item_07.png",
-        staff: "厨师",
-        wages: "3200-3500元/月",
-        discount: "免费培训|包吃",
-        name: "一品香",
-        distance: "阳西县 25km"
-      },
-      {
-        status: 2,
-        img: "../../static/img/work/item_07.png",
-        staff: "web前端",
-        wages: "7000-12000元/月",
-        discount: "免费培训|包吃",
-        name: "华哥大排档",
-        distance: "阳西县 25km"
-      }
     ],
-    show: 'none',
-  },
-  infotap (){
-    this.setData({
-      show:'block'
-    })
   },
 
   /**

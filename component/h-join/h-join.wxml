@@ -1,8 +1,8 @@
 <!--component/h-join/h-join.wxml-->
 <view>
-  <view class="box" style="display:{{show?'':'none'}};">
+  <view class="box {{show?'active':''}}">
     <view class="box-item">
-      <view class="close">X
+      <view class="close" bindtap="closetap">X
         <view class="clear"></view>
       </view>
       <view class="resume">我的简历</view>
@@ -16,14 +16,14 @@
         <view class="left">性别</view>
         <view class="right">
           <view class="page__bd">
-        <view class="section section_gap">
-            <radio-group class="radio-group" bindchange="radioChange">
+            <view class="section section_gap">
+              <radio-group class="radio-group" bindchange="radioChange">
                 <radio class="radio" wx:for-items="{{items}}" wx:key="name" value="{{item.name}}" checked="{{item.checked}}">
-                    <text>{{item.value}}</text>
+                  <text>{{item.value}}</text>
                 </radio>
-            </radio-group>
-        </view>
-    </view>
+              </radio-group>
+            </view>
+          </view>
         </view>
       </view>
       <view class="text1">

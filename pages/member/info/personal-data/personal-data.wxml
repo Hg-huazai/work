@@ -1,0 +1,82 @@
+<!--pages/member/info/personal-data/personal-data.wxml-->
+<!--pages/member/resume/resume.wxml-->
+<view>
+  <view class="content1">
+    <view class="content1-bottom">
+      
+      <view class="text6"><text decode="true"> &gt;</text></view>
+      <view class="img">
+        <image src="{{url}}" bindtap="addImg"></image>
+      </view>
+      <view class="info">
+        <view class="info-top">
+          <view class="text1">头像</view>
+        </view>
+      </view>
+      <view class="clear"></view>
+    </view>
+  </view>
+  <view class="content2">
+    <view class="content2-item">
+      <view class="text1">
+        <view class="left">真实姓名</view>
+        <view class="right"><input type="number"></input></view>
+        <view class="clear"></view>
+      </view>
+      
+      <view class="text1">
+        <view class="left">出生日期</view>
+        <view class="right">请选择出生年限 <text decode>&gt;</text></view>
+        <view class="clear"></view>
+      </view>
+      <view class="text1">
+        <view class="left">联系电话</view>
+        <view class="right"><input type="number"></input></view>
+        <view class="clear"></view>
+      </view>
+      <view class="text1">
+        <view class="left">性别</view>
+        <view class="right">
+          <view class="page__bd">
+            <view class="section section_gap">
+              <radio-group class="radio-group" bindchange="radioChange">
+                <radio class="radio" wx:for-items="{{items1}}" wx:key="name" value="{{item.name}}" checked="{{item.checked}}">
+                  <text>{{item.value}}</text>
+                </radio>
+              </radio-group>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="content2">
+    <view class="content2-item">
+      
+      <view class="text1">
+        <view class="left">最高学历</view>
+        <view class="right">请选择学历 <text decode>&gt;</text></view>
+        <view class="clear"></view>
+      </view>
+      <view class="text1">
+        <view class="left">工作年限</view>
+        <view class="right">请选择工作年限 <text decode>&gt;</text></view>
+        <view class="clear"></view>
+      </view>
+      <view class="text1">
+        <view class="left">身份</view>
+        <view class="right">
+          <view class="page__bd">
+            <view class="section section_gap">
+              <radio-group class="radio-group" bindchange="radioChange">
+                <radio class="radio" wx:for-items="{{items2}}" wx:key="name" value="{{item.name}}" checked="{{item.checked}}">
+                  <text>{{item.value}}</text>
+                </radio>
+              </radio-group>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,127 @@
+/* pages/member/record/record.wxss */
+page {
+  background-color: #f1f1f1;
+}
+.record {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 2rpx solid #d9d9d9; 
+  border-top: 2rpx solid #d9d9d9; 
+  padding-top: 20rpx;
+}
+.record .record-item {
+  text-align: center;
+  display: inline-block;
+}
+.record .record-item.active {
+  font-weight: bold;
+  padding-bottom: 20rpx;
+  border-bottom: 2px solid #ebaa2c;
+}
+
+.clear {
+  clear: both;
+}
+.content {
+  background-color: #fff;
+  margin-top: 20rpx;
+}
+.content .top {
+  padding: 20rpx;
+  border-bottom: 2rpx solid #eeeeee;
+}
+.content .top .left {
+  float: left;
+}
+.content .top .right {
+  float: right;
+}
+
+.content4 {
+  padding: 20rpx;
+  padding-top: 40rpx;  
+  /* height: 130px; */
+  /* border-bottom: 15px solid #f1f1f1; */
+  position: relative;
+}
+.content4 .img {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.content4 .img image {
+  width: 80rpx;
+}
+.content4 .content4-top {
+  /* height: 85px; */
+  margin-bottom: 5px;
+}
+.content4 .content4-top .left {
+  float: left;
+}
+.content4 .content4-top .left image {
+  width: 80px;
+  height: 80px;
+}
+.content4 .content4-top .center {
+  float: left;
+  margin-left: 10px;
+}
+.content4 .content4-top .center .text1 {
+  font-weight: bold;
+  
+}
+.content4 .content4-top .center .text2 {
+  color: #ff6a00;
+  font-weight: bold;
+  line-height: 40px;
+
+}
+.content4 .content4-top .center .text3 {
+  color: #afafaf;
+
+}
+.content4 .content4-top .right {
+  float: right;
+  vertical-align: middle;
+
+}
+.content4 .content4-top .right .enroll {
+  border: 1px solid #ff9800;
+  color: #ff9800;
+  padding: 10px 20px;
+  border-radius: 20px;
+  margin-top: 20px;
+  
+}
+.content4 .content4-bottom {
+  font-size: 14px;
+}
+.content4 .content4-bottom .left {
+  background: #f5f5f5;
+  display: inline-block;
+  float: left;
+  color: #8a8a8a;
+  padding: 3px 5px;
+  border-radius: 6px;
+} 
+.content4 .content4-bottom .right {
+  display: inline-block;
+  float: right;
+  color: #8a8a8a;
+}
+.content4 .clera {
+  clera:bold;
+}
+
+.null {
+  padding-top: 60rpx;
+  text-align: center;
+}
+.null .img image {
+  width: 80rpx;
+}
+.null .no {
+  color: #bbb;
+}

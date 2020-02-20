@@ -1,0 +1,133 @@
+/* pages/member/load/load.wxss */
+page {
+  background-color: #f1f1f1;
+  /* padding: 20rpx; */
+}
+.content4 {
+  margin-top: 20rpx;
+  padding:20rpx;
+  /* height: 130px; */
+  margin-bottom: 20rpx;
+  position: relative;
+  background-color: #fff;
+  /* box-sizing: border-box; */
+}
+.content4 .img {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.content4 .img image {
+  width: 80rpx;
+}
+.content4 .content4-top {
+  height: 85px;
+  margin-bottom: 5px;
+}
+.content4 .content4-top .left {
+  float: left;
+}
+.content4 .content4-top .left image {
+  width: 80px;
+  height: 80px;
+}
+.content4 .content4-top .center {
+  float: left;
+  margin-left: 10px;
+}
+.content4 .content4-top .center .text1 {
+  font-weight: bold;
+  font-size: 36rpx;
+  
+}
+.content4 .content4-top .center .text2 {
+  color: #ff6a00;
+  font-weight: bold;
+  line-height: 40px;
+
+}
+.content4 .content4-top .center .text3 {
+  color: #afafaf;
+
+}
+.content4 .content4-top .right {
+  float: right;
+  vertical-align: middle;
+
+}
+.content4 .content4-top .right .enroll {
+  margin-top: 20px;
+  
+}
+.content4 .content4-bottom {
+  font-size: 14px;
+}
+.content4 .content4-bottom .left {
+  background: #f5f5f5;
+  display: inline-block;
+  float: left;
+  color: #8a8a8a;
+  padding: 3px 5px;
+  border-radius: 6px;
+} 
+.content4 .content4-bottom .right {
+  display: inline-block;
+  float: right;
+  color: #8a8a8a;
+}
+.content4 .clear {
+  clear: both;
+}
+
+.load {
+  padding: 40rpx 20rpx 60rpx;
+  background-color: #fff;
+}
+.load .load-item {
+  display: flex;
+  justify-content: space-between;
+}
+.load .load-item .item  {
+  text-align: center;
+}
+.load .load-item .item .iconfont.icon-duihao  {
+  color: #cfcfcf;
+  font-size: 60rpx;
+}
+.load .load-item .item .item-text  {
+  color: #cfcfcf;
+  font-size: 30rpx;
+  margin-top: 10rpx;
+}
+.load .load-item .item.active .iconfont.icon-duihao  {
+  color: #ffcd00;
+}
+.load .load-item .item.active .item-text  {
+  color: #ffcd00;
+}
+
+.load .tip {
+  margin: 60rpx 0;
+}
+.load .tip .iconfont.icon-dian {
+  color: #ffcc00;
+  display: inline-block;
+}
+.load .tip .iconfont.icon-dian {
+  color: #ffcc00;
+  display: inline-block;
+}
+.load .tip .iconfont.icon-dian {
+  color: #ffcc00;
+  display: inline-block;
+  font-size: 30rpx;
+}
+.load .tip .text {
+  display: inline-block;
+  font-size: 30rpx;
+  padding-left: 20rpx;
+}
+.load .tip .time {
+  font-size: 26rpx;
+  padding-left: 50rpx;
+}

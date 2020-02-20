@@ -1,0 +1,39 @@
+<!--pages/member/record/record.wxml-->
+<view>
+  <view class="record">
+    <view class="record-item {{index === curren ? 'active' : ''}} " wx:for="{{record}}" wx:key="{{index}}" data-index="{{index}}" bindtap="recordtap">{{item.theme}}</view>
+  </view>
+  <view class="content" wx:for="{{employeInfo}}" wx:key="{{index}}">
+    <view class="top">
+      <view class="left">投递成功</view>
+      <view class="right iconfont icon-fa-right-copy"></view>
+      <view class="clear"></view>
+    </view>
+    <view class="bottom">
+      <navigator class="content4"  url="./details">
+        <view class="content4-top">
+          <view class="center">
+            <text class="text1">{{item.staff}}\n</text>
+            <text class="text2">{{item.wages}}\n</text>
+          </view>
+          <view class="clear"></view>
+        </view>
+        <view class="content4-bottom">
+          <view  class="left">
+            <text decode>{{item.name}} &gt;</text>
+          </view>
+          <view class="right">
+            <text>{{item.distance}}</text>
+          </view>
+          <view class="clear"></view>
+        </view>
+      </navigator>
+    </view>
+  </view>
+  <view class="null">
+    <view class="img">
+      <image src="../../../static/img/mine/images/no_03.png" mode="widthFix"></image>
+    </view>
+    <view class="no">暂无更多</view>
+  </view>
+</view>

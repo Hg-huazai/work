@@ -1,0 +1,62 @@
+<!--pages/member/load/load.wxml-->
+<!--列表-->
+    <view>
+      <navigator class="content4" wx:for="{{employeInfo}}" wx:key="{{index}}" url="./details">
+        <view class="content4-top">
+          <view class="left">
+            <image src="{{item.img}}"></image>
+          </view>
+          <view class="center">
+            <text class="text1">{{item.staff}}\n</text>
+            <text class="text2">{{item.wages}}\n</text>
+          </view>
+          <view class="right">
+            <view class="enroll">
+              <view class="iconfont icon-jiantou"></view>
+            </view>
+          </view>
+          <view class="clear"></view>
+        </view>
+        <view class="content4-bottom">
+          <view  class="left">
+            <text decode>{{item.name}} &gt;</text>
+          </view>
+          <view class="right">
+            <text>{{item.distance}}</text>
+          </view>
+          <view class="clear"></view>
+        </view>
+        <view class="img">
+          <image src="../../../static/img/work/sanjiaoxing.png" mode="widthFix"></image>
+        </view>
+      </navigator>
+      <view class="load">
+        <view class="load-item">
+          <view class="item active">
+            <view class="iconfont icon-duihao "></view>
+            <view class="item-text">投递成功</view>
+          </view>
+          <view class="item">
+            <view class="iconfont icon-duihao "></view>
+            <view class="item-text">被查看</view>
+          </view>
+          <view class="item">
+            <view class="iconfont icon-duihao "></view>
+            <view class="item-text">通过初筛</view>
+          </view>
+          <view class="item">
+            <view class="iconfont icon-duihao "></view>
+            <view class="item-text">待面试</view>
+          </view>
+          <view class="item">
+            <view class="iconfont icon-duihao "></view>
+            <view class="item-text">等待结果</view>
+          </view>
+        </view>
+        <view class="tip">
+          <view class="iconfont icon-dian"></view>
+          <view class="text">你的简历已投递成功，请耐心等待企业的查看</view>
+          <view class="time">2020-2-18  21:25</view>
+        </view>
+      </view>
+    </view>
