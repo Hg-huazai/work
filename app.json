@@ -3,6 +3,9 @@
     "pages/home/index",
     "pages/home/details",
     "pages/home/info/info",
+    "pages/activity/index/index",
+    "pages/map/index/index",
+    "pages/map/search/search",
     "pages/index/index",
     "pages/logs/logs",
     "pages/member/mine",
@@ -26,6 +29,18 @@
     "list": [{
       "pagePath": "pages/home/index",
       "text": "找工作",
+      "iconPath": "static/img/tabbar/icon_03.png",
+      "selectedIconPath": "static/img/tabbar/icon_03_active.png"
+    },
+    {
+      "pagePath": "pages/activity/index/index",
+      "text": "活动",
+      "iconPath": "static/img/tabbar/icon_03.png",
+      "selectedIconPath": "static/img/tabbar/icon_03_active.png"
+    },
+    {
+      "pagePath": "pages/map/index/index",
+      "text": "地图",
       "iconPath": "static/img/tabbar/icon_03.png",
       "selectedIconPath": "static/img/tabbar/icon_03_active.png"
     },

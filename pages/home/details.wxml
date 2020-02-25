@@ -1,7 +1,7 @@
 <!--pages/home/details.wxml-->
 <view>
   <!-- 轮播图 -->
-  <h-join style="display:{{show}}"/>
+  <h-join style="display:{{show}}" bind:closetap="closetap"/>
   <view class="content1">
     <swiper indicator-dots="true" autoplay="true" circular="true" class="swiper">
       <swiper-item>

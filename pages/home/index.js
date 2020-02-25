@@ -64,7 +64,7 @@ Page({
       { name: "不限" },
       { name: "不限" }
     ],
-    city: "阳江"
+    city: "广州"
   },
 
   activerecommend: function (e){
@@ -82,7 +82,7 @@ Page({
     })
   },
   scrollshow: function() {
-    console.log('scroll-show');
+    // console.log('scroll-show');
     this.setData({
       showdow: true
     })

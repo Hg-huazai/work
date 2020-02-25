@@ -30,10 +30,11 @@ Component({
    */
   methods: {
     closetap() {
-      this.setData({
-        show: true
-      })
+      // this.setData({
+      //   show: true
+      // })
       // console.log("close");
+      this.triggerEvent('closetap')
     }
   }
 })

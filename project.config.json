@@ -148,6 +148,27 @@
 					"id": -1,
 					"name": "报名加载",
 					"pathName": "pages/member/load/load",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "活动主页",
+					"pathName": "pages/activity/index/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "地图主页",
+					"pathName": "pages/map/index/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "搜索",
+					"pathName": "pages/map/search/search",
 					"scene": null
 				}
 			]

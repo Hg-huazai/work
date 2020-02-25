@@ -1,0 +1,60 @@
+/* pages/map/search/search.wxss */
+page {
+  background-color: #f1f1f1;
+}
+.search {
+  background-color: #fff;
+  padding: 40rpx;
+  position: relative;
+  margin-bottom: 30rpx ;
+}
+.search input {
+  background-color: #f5f5f5;
+  border-radius: 50rpx; 
+  padding: 20rpx 0;
+  padding-left: 80rpx;
+  padding-right: 40rpx;
+  font-size: 30rpx;
+}
+.search .iconfont.icon-search {
+  position: absolute;
+  left: 72rpx;
+  top: 60rpx;
+  font-size: 40rpx;
+  color: #d8d8d8;
+}
+.search .iconfont.icon-wrong-3 {
+  position: absolute;
+  right: 75rpx;
+  top: 57rpx;
+  font-size: 40rpx;
+  color: #d8d8d8;
+}
+.search .location {
+  margin-top: 20rpx;
+  font-size: 28rpx;
+  color: #666666;
+}
+.search .location .name {
+  display: inline-block;
+  width: 75%;
+}
+.search .location .iconfont {
+  display: inline-block;
+  width: 25%;
+  font-size: 34rpx;
+}
+.search .location .iconfont text {
+  margin-left: 10rpx;
+  font-size: 28rpx;
+}
+/* 记录 */
+.record {
+  padding: 0 40rpx;
+  background-color: #fff;
+  font-size: 30rpx;
+}
+.record .item {
+  padding: 40rpx 0;
+  border-bottom: 2rpx solid #eeeeee;
+}

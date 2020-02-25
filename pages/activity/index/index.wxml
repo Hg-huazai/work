@@ -1,0 +1,45 @@
+<!--pages/activity/index/index.wxml-->
+<view>
+
+  <view class="work">
+    <view class="work-right">
+      <navigator><image src="../../../static/img/activity/images/top_03.png" mode="widthFix"></image></navigator>
+    </view>
+    <view class="work-left">
+      <navigator class="work-l-t">
+        <image src="../../../static/img/activity/images/top_05.png" mode="widthFix"></image>
+      </navigator>
+      <view class="work-l-b">
+        <navigator><image src="../../../static/img/activity/images/top_08.png" mode="widthFix"></image></navigator>
+      </view>
+    </view>
+    
+    <view class="clear"></view>
+  </view>
+
+<!-- 趣味活动 -->
+<view class="activity">
+  <view class="activity-top">趣味活动</view>
+  <view class="activity-box">
+    <view class="item">
+      <view class="over">已结束</view>
+      <image src="../../../static/img/activity/images/activity_03.png" mode="widthFix"></image>
+    </view>
+    <view class="item">
+      <view class="over">已结束</view>
+      <image src="../../../static/img/activity/images/activity_06.png" mode="widthFix"></image>
+    </view>
+    <view class="item">
+      <view class="over">已结束</view>
+      <image src="../../../static/img/activity/images/activity_07.png" mode="widthFix"></image>
+    </view>
+    <view class="item">
+      <view class="over">已结束</view>
+      <image src="../../../static/img/activity/images/activity_08.png" mode="widthFix"></image>
+    </view>
+  </view>
+</view>
+
+
+
+</view>

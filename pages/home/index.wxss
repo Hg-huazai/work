@@ -5,14 +5,23 @@
   position: relative;
   box-sizing: border-box;
 }
+.clear {
+  clear: both;
+}
+.search-box {
+  width: 100%;
+  text-align: center;
+}
 .search {
-  padding: 10px;
+  width: 80%;
+  padding: 10rpx;
   background: #f8f8f8;
-  border-radius: 20px;
-  height: 85rpx;
-  line-height: 85rpx;
+  border-radius: 50rpx;
+  height: 70rpx;
+  line-height: 70rpx;
   font-size: 14px;
   padding-left: 5px;
+  margin: 0 20rpx;
 }
 .search .city {
   display: inline-block;
@@ -37,14 +46,14 @@
 }
 .work {
   padding: 10px;
-  height: 240px;
+  /* height: 240px; */
   /* background: pink; */
    margin-top: 10px;
-   margin-bottom: 20px;
+   /* margin-bottom: 20px; */
 }
 .work .work-left {
   float: left;
-  width: 67%;
+  width: 64%;
   padding-right: 3%;
   height: 100%;
 }
@@ -80,7 +89,7 @@
 }
 .work .work-right {
   float: left;
-  width: 30%;
+  width: 33%;
 }
 .work .work-right image {
   width: 100%;

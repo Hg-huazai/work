@@ -1,6 +1,7 @@
 <!--component/h-join/h-join.wxml-->
 <view>
-  <view class="box {{show?'active':''}}">
+  <!-- <view class="box {{show?'active':''}}"> -->
+  <view class="box">
     <view class="box-item">
       <view class="close" bindtap="closetap">X
         <view class="clear"></view>

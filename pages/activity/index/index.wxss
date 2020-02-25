@@ -1,0 +1,75 @@
+/* pages/activity/index/index.wxss */
+.clear {
+  clear: both;
+}
+.work {
+  padding: 20rpx;
+  /* height: 240px; */
+  /* background: pink; */
+   margin-top: 20rpx;
+   /* margin-bottom: 40rpx; */
+   border-bottom: 20rpx solid #f5f5f5;
+}
+.work .work-left {
+  float: left;
+  width: 62%;
+  padding-left: 3%;
+  height: 100%;
+}
+.work .work-left image {
+  /* height: 220rpx; */
+  width: 100%;
+}
+.work .work-left .work-l-t {
+  width: 100%;
+  padding-bottom: 10rpx;
+  /* height: 50%; */
+  box-sizing: border-box;
+ 
+}
+.work .work-left .work-l-b navigator image {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+}
+.work .work-right {
+  float: left;
+  width: 35%;
+}
+.work .work-right image {
+  width: 100%;
+}
+
+/* 趣味活动 */
+.activity {
+  padding: 20rpx;
+  width: 100%;
+  box-sizing: border-box;
+}
+.activity .activity-top {
+  padding-top: 20rpx;
+  padding-bottom: 30rpx;
+}
+.activity .activity-box {
+  width: 100%;
+}
+.activity .activity-box .item {
+  margin-bottom: 20rpx;
+  border-radius: 20rpx;
+  /* background-color: pink; */
+  overflow: hidden;
+  position: relative;
+}
+.activity .activity-box .item .over {
+  position: absolute;
+  right: 0;
+  top: 30rpx;
+  font-size: 24rpx;
+  background-color: #bbbbbb;
+  color: #fff;
+  padding: 10rpx 20rpx;
+  border-radius: 30rpx 0 0 30rpx;
+}
+.activity .activity-box image {
+  width: 100%;
+}

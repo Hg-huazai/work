@@ -1,0 +1,79 @@
+<!--pages/map/index/index.wxml-->
+<view>
+  <view class="map">
+    <!-- <view>{{height}}、{{topheight}}、{{centerheight}}</view> -->
+    <view class="map-top {{show ? 'close' : ''}}" bindtap="closetap">
+      <view class="left">
+        <view class="iconfont icon-wenben"></view>
+      </view>
+      <view class="center">
+        <view class="text">设置求职期望 <text>\n 推荐更多您的优质岗位</text></view>
+      </view>
+      <navigator class="right" url="../../member/resume/resume">去设置</navigator>
+      <view class="cuo">
+        <view class="iconfont icon-right-copy"></view>
+        <view class="clear"></view>
+      </view>
+      <view class="clear"></view>
+    </view>
+    <view class="map-center">
+      <navigator class="cneter-item" url="../search/search">
+        <view class="iconfont icon-location left-l"></view>
+        <view class="text1 left-l">深圳市</view>
+        <view class="iconfont icon-fa-right-copy right-r"></view>
+        <view class="clear"></view>
+      </navigator>
+      <view class="cneter-item center">
+        <view class="text1 in-b">岗位</view>
+        <view class="iconfont icon-shangchuanicon_fuzhi_fuzhi in-b"></view>
+      </view>
+      <view class="cneter-item center" bindtap="showtap">
+        <view class="text1 in-b" bindtap="showtap">筛选</view>
+        <view class="iconfont icon-shaixuan in-b"></view>
+      </view>
+    </view>
+    <view class="map-bottom">
+      <map id="map" longitude="113.324520" latitude="23.099994" scale="14" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" polyline="{{polyline}}" bindregionchange="regionchange" show-location style="width: 100%; height: {{height}}px;"></map>
+    </view>
+  </view>
+
+
+    <!--筛选-------------------------------------------->
+
+  <view class="bgc {{showdow? 'active':''}}" bindtap="showclose" catchtouchmove="noneEnoughPeople" catchtouchmove='true'></view>
+    
+  <view class="screen {{showdow? 'active':''}}">
+      
+    <scroll-view scroll-y="true" class="scroll">
+      <view class="screen-item">
+        <view class="name">福利</view>
+        <view class="name-item">
+          <view class="box {{index===current1? 'active':''}}" wx:for="{{fuli}}" wx:key="{{index}}" data-aid="{{index}}" bindtap="choicetap1">
+            <view class="box-item">{{item.name}}</view>
+          </view>
+        </view>
+      </view>
+      <view class="screen-item">
+        <view class="name">学历要求</view>
+        <view class="name-item">
+          <view class="box {{index===current2? 'active':''}}" wx:for="{{education}}" wx:key="{{index}}" data-bid="{{index}}" bindtap="choicetap2">
+            <view class="box-item">{{item.name}}</view>
+          </view>
+        </view>
+      </view>
+      <view class="screen-item">
+        <view class="name">薪资范围</view>
+        <view class="name-item">
+          <view class="box {{index===current3? 'active':''}}" wx:for="{{money}}" wx:key="{{index}}" data-cid="{{index}}" bindtap="choicetap3">
+            <view class="box-item">{{item.name}}</view>
+          </view>
+        </view>
+      </view>
+      
+    </scroll-view>
+    <view class="bottom">
+      <view class="reset">重置</view>
+      <view class="confirm">确认</view>
+    </view>
+  </view>
+</view>
